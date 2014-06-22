@@ -34,8 +34,8 @@
 		<string>@343max</string>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>de.343max.hex2uicolor</string>
+	<string>de.343max.hex2uicolor-objc</string>
 	<key>CFBundleName</key>
-	<string>Hex2UIColor</string>
+	<string>Hex2[UIColor colorWithRed:blue:green:alpha:1.0]</string>
 </dict>
 </plist>

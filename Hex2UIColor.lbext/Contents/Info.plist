@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleName</key>
+  <string>hex2UIColor</string>
+  <key>CFBundleVersion</key>
+  <string>0.1</string>
+  <key>LBDescription</key>
+  <dict>
+    <key>LBAuthor</key>
+    <string>Max von Webel</string>
+    <key>LBEmail</key>
+    <string>max@343max.de</string>
+    <key>LBSummary</key>
+    <string>Convert hex color to UIColor</string>
+    <key>LBTwitter</key>
+    <string>@343max.de</string>
+    <key>LBWebsite</key>
+    <string>http://www.githunb.com/343max/</string>
+  </dict>
+</dict>
+</plist>
