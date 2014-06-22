@@ -19,8 +19,7 @@ function runWithString(hexColor) {
     return '0x' + x.toUpperCase() + ' / 255.0';
   }
 
-  result = '// #' + hexColor + "\n" + 
-    "[UIColor colorWithRed:" + floatFor(red) + 
+  result = "[UIColor colorWithRed:" + floatFor(red) + 
     " green:" + floatFor(green) + 
     " blue:" + floatFor(blue) + 
     " alpha:1.0]";
