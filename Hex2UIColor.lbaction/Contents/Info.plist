@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LBScripts</key>
+	<dict>
+		<key>LBDefaultScript</key>
+		<dict>
+			<key>LBScriptName</key>
+			<string>hex2uicolor-objc.js</string>
+			<key>LBAcceptedArgumentTypes</key>
+			<array>
+				<string>string</string>
+			</array>
+			<key>LBReturnsResult</key>
+			<true/>
+			<key>LBRequiresArgument</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>LBDescription</key>
+	<dict>
+		<key>LBSummary</key>
+		<string>creates an UIColor from an HTML Hex Color string. Holding down the ⌘–key pastes the result in the frontmost app.</string>
+		<key>LBResult</key>
+		<string>[UIColor colorWithRed:green:blue:alpha:]</string>
+		<key>LBAuthor</key>
+		<string>Max von Webel</string>
+		<key>LBEmail</key>
+		<string>max@343max.de</string>
+		<key>LBWebsite</key>
+		<string>http://www.github.com/343max/</string>
+		<key>LBTwitter</key>
+		<string>@343max</string>
+	</dict>
+	<key>CFBundleIdentifier</key>
+	<string>de.343max.hex2uicolor</string>
+	<key>CFBundleName</key>
+	<string>Hex2UIColor</string>
+</dict>
+</plist>
