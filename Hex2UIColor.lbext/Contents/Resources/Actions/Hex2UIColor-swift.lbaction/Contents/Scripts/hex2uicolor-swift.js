@@ -5,23 +5,40 @@ function run() {
 function runWithString(hexColor) {
   hexColor = hexColor.replace(/^#/, '');
 
-  if (!hexColor.match(/^[0-9a-fA-F]{6,6}$/)) {
+  if (hexColor.length == 3) {
+    hexColor = hexColor[0] + hexColor[0] + hexColor[1] + hexColor[1] + hexColor[2] + hexColor[2];
+  }
+
+  // check for a valid length
+  if ((hexColor == "") || (hexColor.length > 7) || (hexColor.length < 6)) {
     return;
+  }
+
+  // check for valid hex values
+  for (i=0; i<hexColor.length; i++) {
+    if(isNaN( parseInt(hexColor[i], 16) )) {
+      return;
+    }
   }
 
   var result = 'hello!';
 
-  var red = hexColor.substr(0, 2);
-  var green = hexColor.substr(2, 2);
-  var blue = hexColor.substr(4, 2);
+  var hexInt = parseInt(hexColor, 16);
+  var r = (hexInt & 0xff0000) >> 16;
+  var g = (hexInt & 0x00ff00) >> 8;
+  var b = hexInt & 0x0000ff;
 
-  var floatFor = function(x) {
-    return '0x' + x.toUpperCase() + ' / 255.0';
+  r = r/255.0;
+  g = g/255.0;
+  b = b/255.0;
+
+  function round(value, decimals) {
+      return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
   }
 
-  result = "UIColor(red:" + floatFor(red) + 
-    ", green:" + floatFor(green) + 
-    ", blue:" + floatFor(blue) + 
+  result = "UIColor(red:" + round(r, 3) + 
+    ", green:" + round(g, 3) + 
+    ", blue:" + round(b, 3) + 
     ", alpha:1.0)";
   if (LaunchBar.options.commandKey) {
     LaunchBar.paste(result);
