@@ -7,7 +7,7 @@ Hex2UIColor converts these pesky HTML Hex Color definitions kids seem to love so
 It will convert a simple `#663399` to a nice
 
 ```objc
-[UIColor colorWithRed:0x66 / 255.0 green:0x33 / 255.0 blue:0x99 / 255.0 alpha:1.0]
+[UIColor colorWithRed:0.4 green:0.2 blue:0.6 alpha:1]
 ```
 
 When holding down the command key while hitting return the result will be pasted directly into the editor of your choice.
@@ -15,7 +15,7 @@ When holding down the command key while hitting return the result will be pasted
 There is also a hipster version of this litte action that will convert your hex color into swift code:
 
 ```swift
-UIColor(red:0x66 / 255.0, green:0x33 / 255.0, blue:0x99 / 255.0, alpha:1.0)
+UIColor(red:0.4, green:0.2, blue:0.6, alpha:1.0)
 ```
 
 ## Installation
